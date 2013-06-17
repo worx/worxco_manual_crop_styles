@@ -1,0 +1,17 @@
+name = Worxco Manual Crop Styles
+description = A default standards for default sizes Manual Crops for landscape, portrait, and square.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = worxco_manual_crop_styles
+dependencies[] = image
+dependencies[] = manualcrop
+features[features_api][] = api:1
+features[image][] = crop_default_landscape
+features[image][] = crop_default_portrait
+features[image][] = crop_default_square
+features[image][] = crop_large_landscape
+features[image][] = crop_large_square
+features[image][] = crop_medium_landscape
+features[image][] = crop_medium_portrait
+features[image][] = crop_medium_square

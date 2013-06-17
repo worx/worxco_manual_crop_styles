@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Worxco Manual Crop Styles feature.
+ */
+
+include_once 'worxco_manual_crop_styles.features.inc';
