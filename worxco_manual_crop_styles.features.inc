@@ -33,6 +33,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_default_landscape',
   );
 
   // Exported image style: crop_default_portrait.
@@ -58,6 +59,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_default_portrait',
   );
 
   // Exported image style: crop_default_square.
@@ -83,6 +85,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_default_square',
   );
 
   // Exported image style: crop_large_landscape.
@@ -108,6 +111,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_large_landscape',
   );
 
   // Exported image style: crop_large_square.
@@ -133,6 +137,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_large_square',
   );
 
   // Exported image style: crop_medium_landscape.
@@ -158,6 +163,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_medium_landscape',
   );
 
   // Exported image style: crop_medium_portrait.
@@ -183,6 +189,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_medium_portrait',
   );
 
   // Exported image style: crop_medium_square.
@@ -208,6 +215,7 @@ function worxco_manual_crop_styles_image_default_styles() {
         'weight' => 0,
       ),
     ),
+    'label' => 'crop_medium_square',
   );
 
   return $styles;
