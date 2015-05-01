@@ -39,8 +39,9 @@ function worxco_manual_crop_styles_image_default_styles() {
 
   // Exported image style: crop_default_portrait.
   $styles['crop_default_portrait'] = array(
+    'label' => 'crop_default_portrait',
     'effects' => array(
-      5 => array(
+      6 => array(
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 200,
@@ -52,15 +53,22 @@ function worxco_manual_crop_styles_image_default_styles() {
         ),
         'weight' => 0,
       ),
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 200,
+          'height' => 266,
+        ),
+        'weight' => 2,
+      ),
     ),
-    'label' => 'crop_default_portrait',
   );
 
   // Exported image style: crop_default_square.
   $styles['crop_default_square'] = array(
     'label' => 'crop_default_square',
     'effects' => array(
-      18 => array(
+      8 => array(
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 200,
@@ -71,6 +79,14 @@ function worxco_manual_crop_styles_image_default_styles() {
           'style_name' => 'crop_default_square',
         ),
         'weight' => 0,
+      ),
+      9 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 200,
+          'height' => 200,
+        ),
+        'weight' => 2,
       ),
     ),
   );
