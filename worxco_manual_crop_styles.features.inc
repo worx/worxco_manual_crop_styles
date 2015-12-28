@@ -65,7 +65,7 @@ function worxco_manual_crop_styles_image_default_styles() {
   $styles['crop_default_landscape_thumbnail'] = array(
     'label' => 'crop_default_landscape_thumbnail',
     'effects' => array(
-      11 => array(
+      7 => array(
         'name' => 'manualcrop_reuse',
         'data' => array(
           'reuse_crop_style' => 'crop_default_landscape',
@@ -73,11 +73,12 @@ function worxco_manual_crop_styles_image_default_styles() {
         ),
         'weight' => 0,
       ),
-      12 => array(
-        'name' => 'image_scale_and_crop',
+      9 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 45,
-          'height' => 34,
+          'height' => '',
+          'upscale' => 0,
         ),
         'weight' => 2,
       ),
@@ -105,6 +106,54 @@ function worxco_manual_crop_styles_image_default_styles() {
         'data' => array(
           'width' => 200,
           'height' => 266,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: crop_default_portrait_preview.
+  $styles['crop_default_portrait_preview'] = array(
+    'label' => 'crop_default_portrait_preview',
+    'effects' => array(
+      3 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_default_portrait',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      5 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 100,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: crop_default_portrait_thumbnail.
+  $styles['crop_default_portrait_thumbnail'] = array(
+    'label' => 'crop_default_portrait_thumbnail',
+    'effects' => array(
+      4 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_default_portrait',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      6 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 45,
+          'height' => '',
+          'upscale' => 0,
         ),
         'weight' => 2,
       ),
