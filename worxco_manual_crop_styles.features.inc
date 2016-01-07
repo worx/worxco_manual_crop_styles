@@ -187,6 +187,54 @@ function worxco_manual_crop_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: crop_default_square_preview.
+  $styles['crop_default_square_preview'] = array(
+    'label' => 'crop_default_square_preview',
+    'effects' => array(
+      4 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_default_square',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      5 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 100,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: crop_default_square_thumbnail.
+  $styles['crop_default_square_thumbnail'] = array(
+    'label' => 'crop_default_square_thumbnail',
+    'effects' => array(
+      3 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_default_square',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      6 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 45,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
   // Exported image style: crop_large_landscape.
   $styles['crop_large_landscape'] = array(
     'label' => 'crop_large_landscape',
