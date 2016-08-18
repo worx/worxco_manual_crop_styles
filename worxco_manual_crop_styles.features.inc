@@ -262,6 +262,70 @@ function worxco_manual_crop_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: crop_large_landscape_preview.
+  $styles['crop_large_landscape_preview'] = array(
+    'label' => 'crop_large_landscape_preview',
+    'effects' => array(
+      6 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_large_landscape',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 480,
+          'height' => 360,
+        ),
+        'weight' => 2,
+      ),
+      8 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 100,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported image style: crop_large_landscape_scale_default.
+  $styles['crop_large_landscape_scale_default'] = array(
+    'label' => 'crop_large_landscape_scale_default',
+    'effects' => array(
+      9 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_large_landscape',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      10 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 480,
+          'height' => 360,
+        ),
+        'weight' => 2,
+      ),
+      11 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 200,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 3,
+      ),
+    ),
+  );
+
   // Exported image style: crop_large_square.
   $styles['crop_large_square'] = array(
     'label' => 'crop_large_square',
@@ -366,6 +430,38 @@ function worxco_manual_crop_styles_image_default_styles() {
           'height' => 220,
         ),
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: crop_medium_square_preview.
+  $styles['crop_medium_square_preview'] = array(
+    'label' => 'crop_medium_square_preview',
+    'effects' => array(
+      3 => array(
+        'name' => 'manualcrop_reuse',
+        'data' => array(
+          'reuse_crop_style' => 'crop_medium_square',
+          'apply_all_effects' => 0,
+        ),
+        'weight' => 0,
+      ),
+      4 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 220,
+          'height' => 220,
+        ),
+        'weight' => 2,
+      ),
+      5 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 100,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 3,
       ),
     ),
   );
